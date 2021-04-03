@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 std::string word[80]{	//Change this ammount to the number of flash cards.
 "日 / nichi, jitsu / hi, -bi, -ka",
 "一 / ichi / hito(tsu)",
@@ -139,7 +140,7 @@ std::string definition[80]{	//Change this ammount to the number of flash cards.
 "half",
 "man",
 "west",
-"electricy",
+"electricity",
 "school/exam",
 "language",
 "soil",
@@ -149,7 +150,7 @@ std::string definition[80]{	//Change this ammount to the number of flash cards.
 "car/wheel",
 "what",
 "south",
-"ten thousand",
+"ten-thousand",
 "every",
 "white",
 "sky/heaven",
@@ -169,10 +170,11 @@ int main(){
 std::cout << "     ██╗██╗     ██████╗ ████████╗    ███╗   ██╗███████╗\n     ██║██║     ██╔══██╗╚══██╔══╝    ████╗  ██║██╔════╝\n     ██║██║     ██████╔╝   ██║       ██╔██╗ ██║███████╗\n██   ██║██║     ██╔═══╝    ██║       ██║╚██╗██║╚════██║\n╚█████╔╝███████╗██║        ██║       ██║ ╚████║███████║\n ╚════╝ ╚══════╝╚═╝        ╚═╝       ╚═╝  ╚═══╝╚══════╝ made by antomuto4\n" << std::endl;
 std::cout << "This is how everything gets displayed:\nKanji / Onyumi / Kunyomi.\n\n\nNOTE: PLEASE DO NOT PRESS ENTER WITHOUT FILLING IN ANYTHING, IF YOU DO NOT KNOW THE ANSWER YOU STILL HAVE TO INPUT SOMETHING.\n\n\n";
 for(int i=0;i<80;i++){	//Change this ammount to the number of flash cards.
-std::cout << i << "] What is the definiton of " << word[i] << ": ";
+int random = rand() % 80;
+std::cout << i << "] What is the definiton of " << word[random] << ": ";
 std::cin >> answer;
-if(answer != definition[i]){
+if(answer != definition[random]){
 --score;
-std::cout << "The correct answer is: " << definition[i] << "\n";} }
+std::cout << "The correct answer is: " << definition[random] << "\n";} }
 std::cout << "you got " << score << "/80 correct!\n" << std::endl;	//Change this ammount to the number of flash cards.
 }
