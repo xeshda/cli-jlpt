@@ -172,13 +172,12 @@ std::cout << "     ██╗██╗     ██████╗ █████�
 std::cout << "This is how everything gets displayed:\nKanji / Onyumi / Kunyomi.\n\n\nNOTE: PLEASE DO NOT PRESS ENTER WITHOUT FILLING IN ANYTHING, IF YOU DO NOT KNOW THE ANSWER YOU STILL HAVE TO INPUT SOMETHING.\n\n\n";
 
 for(int i=0;i<80;i++){	//Change this ammount to the number of flash cards.
-  int random = rand() % 80;
-  std::cout << i << "] What is the definiton of " << word[random] << ": ";
+  std::cout << i << "] What is the definiton of " << word[i] << ": ";
   std::cin >> answer;
   
-  if(answer != definition[random]){
+  if(answer != definition[i]){
     --score;
-    std::cout << "The correct answer is: " << definition[random] << "\n";}
+    std::cout << "The correct answer is: " << definition[i] << "\n";}
 }
 std::cout << "you got " << score << "/80 correct!\n" << std::endl;	//Change this ammount to the number of flash cards.
 }
