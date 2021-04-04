@@ -168,16 +168,14 @@ int score = 80;	//Change this ammount to the number of flash cards.
 std::string answer; 
 int main(){
 std::cout << "     ██╗██╗     ██████╗ ████████╗    ███╗   ██╗███████╗\n     ██║██║     ██╔══██╗╚══██╔══╝    ████╗  ██║██╔════╝\n     ██║██║     ██████╔╝   ██║       ██╔██╗ ██║███████╗\n██   ██║██║     ██╔═══╝    ██║       ██║╚██╗██║╚════██║\n╚█████╔╝███████╗██║        ██║       ██║ ╚████║███████║\n ╚════╝ ╚══════╝╚═╝        ╚═╝       ╚═╝  ╚═══╝╚══════╝ made by antomuto4\n" << std::endl;
-
 std::cout << "This is how everything gets displayed:\nKanji / Onyumi / Kunyomi.\n\n\nNOTE: PLEASE DO NOT PRESS ENTER WITHOUT FILLING IN ANYTHING, IF YOU DO NOT KNOW THE ANSWER YOU STILL HAVE TO INPUT SOMETHING.\n\n\n";
-
 for(int i=0;i<80;i++){	//Change this ammount to the number of flash cards.
-  std::cout << i << "] What is the definiton of " << word[i] << ": ";
-  std::cin >> answer;
-  
-  if(answer != definition[i]){
-    --score;
-    std::cout << "The correct answer is: " << definition[i] << "\n";}
-}
+int random = rand()%80;
+srand(time(0));
+std::cout << i << "] What is the definiton of " << word[random] << ": ";
+std::cin >> answer;
+if(answer != definition[random]){
+--score;
+std::cout << "The correct answer is: " << definition[random] << "\n";} }
 std::cout << "you got " << score << "/80 correct!\n" << std::endl;	//Change this ammount to the number of flash cards.
 }
