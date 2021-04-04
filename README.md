@@ -1,8 +1,12 @@
 # CLI-JLPT
-![](https://user-images.githubusercontent.com/56132390/113479813-6b855100-9491-11eb-8584-abb6ab09958d.png)
+![](https://user-images.githubusercontent.com/56132390/113513406-e5890900-9569-11eb-81c9-e3d88c3b8863.png)
 
 ## Lore
 - [**@kylian-tm**](https://github.com/kylian-tm), a dear friend of mine - sent me a code he wrote that would resemble some kind of flash card alternative used for learning. I took this idea and code into consideration and made a JLPT Kanji test.
+
+## Screenshots
+![](https://user-images.githubusercontent.com/56132390/113479813-6b855100-9491-11eb-8584-abb6ab09958d.png)
+
 
 
 ### LICENSE
