@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-std::string word[80]{	//Change this ammount to the number of flash cards.
+std::string word[80]{	//Change this amount to the number of flash cards.
 "日 / nichi, jitsu / hi, -bi, -ka",
 "一 / ichi / hito(tsu)",
 "国 / koku / kuni",
@@ -82,7 +82,7 @@ std::string word[80]{	//Change this ammount to the number of flash cards.
 "父 / fu / chichi, tou",
 "雨 / u / ame, ama",
 };
-std::string definition[80]{	//Change this ammount to the number of flash cards.
+std::string definition[80]{	//Change this amount to the number of flash cards.
 "day",
 "one",
 "country",
@@ -164,18 +164,20 @@ std::string definition[80]{	//Change this ammount to the number of flash cards.
 "father",
 "rain",
 };
-int score = 80;	//Change this ammount to the number of flash cards.
+int score = 80;	//Change this amount to the number of flash cards.
 std::string answer; 
+
 int main(){
 std::cout << "     ██╗██╗     ██████╗ ████████╗    ███╗   ██╗███████╗\n     ██║██║     ██╔══██╗╚══██╔══╝    ████╗  ██║██╔════╝\n     ██║██║     ██████╔╝   ██║       ██╔██╗ ██║███████╗\n██   ██║██║     ██╔═══╝    ██║       ██║╚██╗██║╚════██║\n╚█████╔╝███████╗██║        ██║       ██║ ╚████║███████║\n ╚════╝ ╚══════╝╚═╝        ╚═╝       ╚═╝  ╚═══╝╚══════╝ made by antomuto4\n" << std::endl;
 std::cout << "This is how everything gets displayed:\nKanji / Onyumi / Kunyomi.\n\n\nNOTE: PLEASE DO NOT PRESS ENTER WITHOUT FILLING IN ANYTHING, IF YOU DO NOT KNOW THE ANSWER YOU STILL HAVE TO INPUT SOMETHING.\n\n\n";
-for(int i=0;i<80;i++){	//Change this ammount to the number of flash cards.
-int random = rand()%80;
-srand(time(0));
-std::cout << i << "] What is the definiton of " << word[random] << ": ";
-std::cin >> answer;
-if(answer != definition[random]){
---score;
-std::cout << "The correct answer is: " << definition[random] << "\n";} }
-std::cout << "you got " << score << "/80 correct!\n" << std::endl;	//Change this ammount to the number of flash cards.
+
+for(int i=0;i<80;i++){	//Change this amount to the number of flash cards.
+  int random = rand()%80;
+  srand(time(0));
+  std::cout << i << "] What is the definiton of " << word[random] << ": ";
+  std::cin >> answer;
+  if(answer != definition[random]){
+  --score;
+  std::cout << "The correct answer is: " << definition[random] << "\n";} }
+std::cout << "you got " << score << "/80 correct!\n" << std::endl;	//Change this amount to the number of flash cards.
 }
