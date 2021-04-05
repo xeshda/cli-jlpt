@@ -115,7 +115,7 @@ std::string definition[80]{	//Change this amount to the number of flash cards.
 "nine",
 "enter",
 "study",
-"high/expensive",
+"high/amount",
 "yen",
 "child",
 "outside",
