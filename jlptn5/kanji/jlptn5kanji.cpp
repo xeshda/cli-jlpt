@@ -174,7 +174,6 @@ std::cout << "This is how everything gets displayed:\nKanji / Onyumi / Kunyomi.\
 for(int i=0;i<80;i++){	//Change this amount to the number of flash cards.
 std::uniform_int_distribution<> dist(1, 80);
 int number = dist(rng);
-std::cout << dist(rng) << std::endl;
 std::cout << i << "] What is the definiton of " << word[number] << ": ";
 std::cin >> answer;
 if(answer != definition[number]){
