@@ -103,7 +103,7 @@ std::string definition[80]{	//Change this amount to the number of flash cards.
 "month/moon",
 "minute/understand",
 "back/later",
-"front",
+"last",
 "life",
 "five",
 "space",
